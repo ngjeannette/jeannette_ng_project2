@@ -1,0 +1,31 @@
+nav {
+    color: $colorPrimary;
+    width: 50%;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        padding:20px 0 0 0;
+        margin:0;
+        li {
+            list-style: none;
+            display: flex;
+        }
+    }
+}
+
+nav a {
+    text-decoration: none;
+    color: $colorPrimary;
+    text-transform: uppercase;
+    align-self: flex-end;
+    padding-bottom: 13px;
+    &:hover {
+        color: $colorAccent;
+    }
+}
+
+nav ul li:first-child {
+    @include ffSize(42);
+    font-weight: fontWeightBold;
+    font-family: $ffPrimary;
+}

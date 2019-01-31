@@ -1,0 +1,37 @@
+header {
+    @include header('../../images/home-image-1.jpg');
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        .headerText {
+            // position: relative; 
+            align-self: center;
+            display: flex;
+            height: calc(100vh - 110px); 
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 7%;
+        }
+    }
+}
+
+h1 {
+    @include ffSize(100); // switch this to 166!
+    font-family: $ffSecondary;
+    font-weight: $fontWeightLight;
+    margin: 0;
+    color: $colorPrimary;
+    line-height: 7.6rem;
+}
+
+.header {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+}
+
+h1+h1 {
+    color: $colorAccent;
+}
