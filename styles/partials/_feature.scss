@@ -1,0 +1,46 @@
+.feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .featureLeft {
+        width: 40%;
+    }
+    .featureRight {
+        width: 50%;
+    }
+    .featureLeft,
+    .featureRight {
+        img {
+            width: 100%;
+            position: relative;
+        }
+        .discoverText,
+        .upcomingWorkshopsText {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .discoverText {
+            padding-left: 20%;
+        }
+        .upcomingWorkshopsText{
+            padding-right: 20%;
+        }
+    }
+}
+
+img.right {
+    @extend .boxShadowLeft;
+    bottom: -20px;
+}
+
+img.left {
+    @extend .boxShadowRight;
+    top: -20px;
+}
+
+.discoverText,
+.upcomingWorkshopsText {
+    h3 {
+        @extend .heading6;
+    }
+}
