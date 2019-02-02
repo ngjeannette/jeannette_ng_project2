@@ -1,11 +1,14 @@
 nav {
     color: $colorPrimary;
-    width: 50%;
+    background: $colorDark;
+    display: flex;
     ul {
         display: flex;
+        width: 50%;
         justify-content: space-between;
-        padding: 20px 0 0 0;
+        align-content: center;
         margin: 0;
+        padding: 0;
         li {
             list-style: none;
             display: flex;
@@ -18,7 +21,7 @@ nav a {
     color: $colorPrimary;
     text-transform: uppercase;
     align-self: flex-end;
-    padding-bottom: 13px;
+    padding-bottom: 23px;
     &:hover {
         color: $colorAccent;
     }

@@ -1,18 +1,26 @@
 header {
-    @include header('../../images/home-image-1.jpg');
-    .container {
+    @include header('../images/home-image-1.jpg');
+    .header {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: calc(100vh - 100px);
+        justify-content: center;
         .headerText {
             align-self: center;
             display: flex;
-            height: calc(100vh - 110px); 
             flex-direction: column;
             justify-content: center;
             padding-left: 7%;
+            position: relative;
+            ;
         }
     }
+}
+
+.headerimage {
+    position: absolute;
+    right: 0;
+    top: 127px;
 }
 
 h1 {
@@ -21,5 +29,13 @@ h1 {
     font-weight: $fontWeightLight;
     margin: 0;
     color: $colorPrimary;
-    line-height: 7.6rem;
+}
+
+h1+h1 {
+    color: $colorAccent;
+}
+
+h1:first-child {
+    position: relative;
+    left: -5px;
 }

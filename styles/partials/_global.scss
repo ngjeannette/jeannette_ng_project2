@@ -1,7 +1,7 @@
 // colors
 $colorPrimary: rgb(240, 239, 237);
-$colorSecondaryDark:rgb(44, 44, 44);
-$colorSecondaryLight:rgb(79, 79, 79);
+$colorSecondary: #2c2c2c;
+$colorDark: rgb(0,0,0);
 $colorAccent: rgb(248, 231, 28);
 $colorAccentLight:rgb(14, 144, 45);
 $colorAccentDark:rgb(7, 65, 21);
@@ -91,7 +91,7 @@ p {
     font-weight: $fontWeightLight;
     @include ffSize(20);
     @include lh(32);
-    color: $colorSecondaryLight;
+    color: $colorSecondary;
 }
 
 .form {
@@ -122,7 +122,7 @@ p {
 // Button
 .button {
     text-decoration: none;
-    color: black;
+    color: white;
     background: $colorAccentLight;
     padding: 2rem 4rem;
     display: inline-block;
@@ -135,6 +135,11 @@ p {
         background: $colorAccent;
         color: $colorPrimary;
     }
+}
+
+.buttonPost {
+    @extend .button;
+    padding: 0; // width: 100%;
 }
 
 // image
@@ -150,4 +155,11 @@ p {
     &:hover {
         box-shadow: -20px 20px $colorAccentLight;
     }
+}
+
+#name:focus,
+#email:focus,
+#comment:focus,
+#message:focus {
+    background-color: $colorAccentLight;
 }

@@ -1,9 +1,10 @@
 header {
-    @include header('../images/home-image-1.jpg');
+    @include header('../images/contact-header-1.jpg');
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
+
 }
 
 h1 {
@@ -13,6 +14,6 @@ h1 {
     margin: 0;
     color: $colorAccent;
     line-height: 7.6rem;
-    padding-bottom:5rem;
+    padding-bottom: 5rem;
     padding-bottom: 50px;
 }
