@@ -1,7 +1,7 @@
 // colors
 $colorPrimary: rgb(240, 239, 237);
 $colorSecondary: #2c2c2c;
-$colorDark: rgb(0,0,0);
+$colorDark: rgb(0, 0, 0);
 $colorAccent: rgb(248, 231, 28);
 $colorAccentLight:rgb(14, 144, 45);
 $colorAccentDark:rgb(7, 65, 21);
@@ -32,7 +32,6 @@ $fontWeightLight:400;
 
 @mixin lh($lineHeightSize) {
     line-height: $lineHeightSize * 1px;
-    line-height: ($lineHeightSize/10) *1rem;
 }
 
 // @extends
@@ -94,11 +93,16 @@ p {
     color: $colorSecondary;
 }
 
-.form {
+input,
+textarea {
     font-family: $ffSecondary;
     font-weight: $fontWeightLight;
-    @include ffSize(20);
+    font-size: 20px;
     @include lh(32);
+}
+
+body {
+    background: $colorPrimary;
 }
 
 .paddingLarge {
@@ -139,7 +143,7 @@ p {
 
 .buttonPost {
     @extend .button;
-    padding: 0; // width: 100%;
+    padding: 1rem 0; // width: 100%;
 }
 
 // image
@@ -162,4 +166,8 @@ p {
 #comment:focus,
 #message:focus {
     background-color: $colorAccentLight;
+}
+
+input {
+    font-size: 20px;
 }

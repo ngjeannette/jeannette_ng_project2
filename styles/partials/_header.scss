@@ -10,7 +10,6 @@ header {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-left: 7%;
             position: relative;
             ;
         }
@@ -24,7 +23,7 @@ header {
 }
 
 h1 {
-    @include ffSize(100); // switch this to 166!
+    @include ffSize(166);
     font-family: $ffSecondary;
     font-weight: $fontWeightLight;
     margin: 0;
@@ -39,3 +38,5 @@ h1:first-child {
     position: relative;
     left: -5px;
 }
+
+

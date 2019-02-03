@@ -4,15 +4,15 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
+    position: relative;
+    z-index:5;
 }
 
 h1 {
-    @include ffSize(100); // switch this to 166!
-    font-family: $ffSecondary;
-    font-weight: $fontWeightLight;
+    @include ffSize(166);
     margin: 0;
+    font-family: $ffSecondary;
     color: $colorAccent;
-    line-height: 7.6rem;
-    padding-bottom:5rem;
+    padding-bottom: 5rem;
     padding-bottom: 50px;
 }

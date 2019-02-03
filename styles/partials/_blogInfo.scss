@@ -1,10 +1,13 @@
 main {
     background: $colorPrimary;
-    @extend .paddingLarge;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    top:-200px;
     aside {
         position: relative;
+        top:300px;
         width: 40%;
     }
 }
@@ -60,6 +63,7 @@ main {
 
 .blogRight {
     width: 55%;
+
     .blogInfoText {
         border-left: 5px solid $colorAccent;
         border-bottom: 5px solid $colorAccent;
@@ -67,6 +71,7 @@ main {
         left: -20px;
         @extend .paddingSmall;
         padding-left: 5%;
+        
     }
 }
 
@@ -74,6 +79,8 @@ main {
     img {
         width: 100%;
         @extend .boxShadowLeft;
+        position: relative;
+        z-index: 10;
     }
 }
 
@@ -97,12 +104,13 @@ main {
     @extend .paddingSmall;
     display: flex;
     flex-direction: column;
-    margin-right: 12.5%;
+    margin-right: 8%;
     h3 {
         @extend .heading5;
     }
     .commentItem {
         display: flex;
+        justify-content: space-between;
         .commentImage {
             width: 15%;
         }
@@ -117,6 +125,6 @@ main {
     }
 }
 
-.commentItem:nth-of-type(n + 2) {
+.commentItem:last-child{
     @extend .paddingLarge;
 }

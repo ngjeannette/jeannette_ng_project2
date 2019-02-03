@@ -1,6 +1,5 @@
 form {
     background: $colorPrimary;
-    @extend .form;
     margin-right: 12.5%;
     .container2 {
         display: grid;
@@ -16,18 +15,24 @@ form {
         width: 100%;
         background: $colorPrimary;
         padding: 20px 30px;
-    }
-    input {
-        border: 0;
-        border-bottom: 2px solid $colorAccentLight;
-    }
-    textarea {
-        border: 2px solid $colorAccentLight;
-    }
-    a {
-        width: 100%;
+
     }
 }
+
+input {
+    border: 0;
+    border-bottom: 2px solid $colorAccentLight;
+}
+
+textarea {
+    border: 2px solid $colorAccentLight;
+}
+
+a {
+    width: 100%;
+}
+
+
 
 .grid3 {
     grid-column: 1 / 3;

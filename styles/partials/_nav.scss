@@ -1,4 +1,4 @@
-nav {
+nav.navMain {
     color: $colorPrimary;
     display: flex;
     ul {
@@ -11,11 +11,12 @@ nav {
         li {
             list-style: none;
             display: flex;
+            padding-right: 10px;
         }
     }
 }
 
-nav a {
+nav.navMain a {
     text-decoration: none;
     color: $colorPrimary;
     text-transform: uppercase;
@@ -26,8 +27,45 @@ nav a {
     }
 }
 
-nav ul li:first-child {
+nav.navMain ul li:first-child {
     @include ffSize(42);
     font-weight: fontWeightBold;
     font-family: $ffPrimary;
 }
+
+nav.navhamburger {
+    position: absolute;
+    top: 40px;
+    width: 50%;
+    height: calc(100% - 45px);
+    z-index: 5;
+    background: pink;
+    padding-top: 40px;
+    &:hover {
+        background: green;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}
+
+// .navhamburger a {
+//     text-decoration: none;
+// }
+
+i.fas.fa-bars.hamburgerMenu {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    display: block;
+    color:white;
+    &:hover {
+        color: green;
+    }
+}
+
+// .fas:before::hover .navhamburger {
+//     display:none;
+// }
