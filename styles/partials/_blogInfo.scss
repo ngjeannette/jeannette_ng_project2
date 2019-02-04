@@ -12,6 +12,7 @@ main {
     }
 }
 
+
 .asideImage {
     position: relative;
     z-index: 1;
@@ -111,12 +112,17 @@ main {
     .commentItem {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         .commentImage {
             width: 15%;
         }
     }
 }
-
+.commentImage{
+    img{
+        width:100%;
+    }
+}
 .commentItemText {
     width: 80%;
     h4 {

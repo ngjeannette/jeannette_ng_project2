@@ -33,39 +33,9 @@ nav.navMain ul li:first-child {
     font-family: $ffPrimary;
 }
 
-nav.navhamburger {
-    position: absolute;
-    top: 40px;
-    width: 50%;
-    height: calc(100% - 45px);
-    z-index: 5;
-    background: pink;
-    padding-top: 40px;
-    &:hover {
-        background: green;
-    }
-    ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    }
+#hamburger{
+position: relative;
+top: 42px;
+right:-88%;
+display: none;
 }
-
-// .navhamburger a {
-//     text-decoration: none;
-// }
-
-i.fas.fa-bars.hamburgerMenu {
-    position: absolute;
-    top: 40px;
-    left: 50px;
-    display: block;
-    color:white;
-    &:hover {
-        color: green;
-    }
-}
-
-// .fas:before::hover .navhamburger {
-//     display:none;
-// }

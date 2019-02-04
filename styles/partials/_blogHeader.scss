@@ -1,18 +1,32 @@
-header {
-    @include header('../images/home-image-1.jpg');
-    display: flex;
+header.blog {
+    @include header('../images/home-image-1.jpg'); // display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
+    z-index: 5;
     position: relative;
-    z-index:5;
+    .container {
+        display: flex;
+        height: 100%;
+        .headerText {
+            align-self: flex-end;
+            padding-bottom: 5rem;
+            padding-bottom: 50px;
+            h1 {
+                margin-bottom: 40px;
+            }
+        }
+    }
 }
 
-h1 {
-    @include ffSize(166);
+.blog .container h1 {
+    @include ffSize(100);
     margin: 0;
     font-family: $ffSecondary;
     color: $colorAccent;
+}
+
+h1:last-child {
     padding-bottom: 5rem;
     padding-bottom: 50px;
 }

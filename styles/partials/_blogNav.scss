@@ -1,6 +1,6 @@
-nav {
+nav.navMain {
     color: $colorPrimary;
-    background: $colorDark;
+    background-color: $colorDark;
     display: flex;
     ul {
         display: flex;
@@ -32,4 +32,12 @@ nav ul li:first-child {
     @include ffSize(42);
     font-weight: fontWeightBold;
     font-family: $ffPrimary;
+}
+
+#hamburger {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 42px;
+    display:none;
 }

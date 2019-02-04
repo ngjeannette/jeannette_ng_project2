@@ -185,7 +185,8 @@ input::-moz-focus-inner {
   font-size: 80px;
   font-size: 8rem;
   line-height: 92px;
-  text-align: center; }
+  text-align: center;
+  color: #2c2c2c; }
 
 .heading3 {
   font-family: "Josefin Sans", sans-serif;
@@ -194,7 +195,8 @@ input::-moz-focus-inner {
   font-size: 5.63rem;
   letter-spacing: 1.3px;
   letter-spacing: 0.13rem;
-  text-align: center; }
+  text-align: center;
+  color: #2c2c2c; }
 
 .heading4 {
   font-family: "Josefin Sans", sans-serif;
@@ -202,7 +204,8 @@ input::-moz-focus-inner {
   font-size: 43px;
   font-size: 4.3rem;
   letter-spacing: 1.3px;
-  letter-spacing: 0.13rem; }
+  letter-spacing: 0.13rem;
+  color: #2c2c2c; }
 
 .heading5, .founderText h2 {
   font-family: "Roboto", sans-serif;
@@ -210,7 +213,8 @@ input::-moz-focus-inner {
   font-size: 42px;
   font-size: 4.2rem;
   letter-spacing: 1px;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.1rem;
+  color: #2c2c2c; }
 
 .heading6, .discoverText h3,
 .upcomingWorkshopsText h3, .infoItem .infoText h3 {
@@ -219,14 +223,16 @@ input::-moz-focus-inner {
   font-size: 32px;
   font-size: 3.2rem;
   letter-spacing: 1px;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.1rem;
+  color: #2c2c2c; }
 
 .heading7 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   font-size: 2rem;
-  line-height: 32px; }
+  line-height: 32px;
+  color: #2c2c2c; }
 
 p {
   font-family: "Roboto", sans-serif;
@@ -234,6 +240,7 @@ p {
   font-size: 20px;
   font-size: 2rem;
   line-height: 32px;
+  color: #2c2c2c;
   color: #2c2c2c; }
 
 input,
@@ -303,6 +310,17 @@ body {
 input {
   font-size: 20px; }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  color: black; }
+
+.skip-link:focus {
+  left: 0;
+  background: white;
+  z-index: 999; }
+
 nav.navMain {
   color: #f0efed;
   display: -webkit-box;
@@ -343,29 +361,11 @@ nav.navMain ul li:first-child {
   font-weight: fontWeightBold;
   font-family: "Roboto", sans-serif; }
 
-nav.navhamburger {
-  position: absolute;
-  top: 40px;
-  width: 50%;
-  height: calc(100% - 45px);
-  z-index: 5;
-  background: pink;
-  padding-top: 40px; }
-  nav.navhamburger:hover {
-    background: green; }
-  nav.navhamburger ul {
-    padding: 0;
-    margin: 0;
-    list-style: none; }
-
-i.fas.fa-bars.hamburgerMenu {
-  position: absolute;
-  top: 40px;
-  left: 50px;
-  display: block;
-  color: white; }
-  i.fas.fa-bars.hamburgerMenu:hover {
-    color: green; }
+#hamburger {
+  position: relative;
+  top: 42px;
+  right: -88%;
+  display: none; }
 
 header {
   height: 100vh;
@@ -581,8 +581,7 @@ footer {
     font-size: 3.8rem; }
   #contactSection .container form {
     position: static; }
-  #contactSection .container form,
-  .contactInfo {
+  #contactSection .container form {
     width: 100%; }
   .contactInfo {
     padding-bottom: 5rem;
@@ -621,7 +620,9 @@ footer {
     margin: 0 4.16% 0 4.16%; }
   .blogComment .commentItem {
     padding: 3rem 0;
-    padding: 30px 0; } }
+    padding: 30px 0; }
+  #contactSection .container .contactInfo {
+    width: 60%; } }
 
 @media (max-width: 1000px) {
   h1 {
@@ -638,9 +639,6 @@ footer {
     margin: 0; } }
 
 @media (max-width: 800px) {
-  h1 {
-    font-size: 50px;
-    font-size: 5rem; }
   .introText h2 {
     font-size: 50px;
     font-size: 5rem;
@@ -687,11 +685,63 @@ footer {
     width: 100%;
     margin-bottom: 30px; }
   .gallery .container img:last-child {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .blogRight .blogInfoText {
+    left: 0;
+    margin: 0; }
+  .blogComment .commentItem .commentImage {
+    width: 25%; }
+  .commentItemText {
+    width: 100%; }
+  #contactSection .container .contactInfo {
+    width: 100%; } }
 
 @media (max-width: 650px) {
-  h1 {
-    font-size: 40px;
-    font-size: 4rem; }
+  h1,
+  .blog .container h1 {
+    font-size: 50px;
+    font-size: 5rem; }
   nav.navMain {
-    display: none; } }
+    display: none; }
+  #hamburger {
+    display: block; }
+  #contactHeader .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%; }
+    #contactHeader .container .headerText {
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      padding-bottom: 5rem;
+      padding-bottom: 50px; }
+      #contactHeader .container .headerText h1 {
+        margin-bottom: 40px; }
+  .griditem input,
+  .griditem textarea {
+    padding: 20px 2px; }
+  .contactInfo h2 {
+    font-size: 22px;
+    font-size: 2.2rem; } }
+
+@media (max-width: 400px) {
+  .blog .container h1,
+  h1 {
+    font-size: 45px;
+    font-size: 4.5rem; }
+  .blog .container h1 .introText h2 {
+    font-size: 25px;
+    font-size: 2.5rem;
+    margin: 0; }
+  .discoverText h3,
+  .upcomingWorkshopsText h3,
+  .infoItem .infoText h3 {
+    font-size: 23px;
+    font-size: 2.3rem; }
+  .heading5, .founderText h2,
+  .blogInfoText h2,
+  .blogComment h3 {
+    font-size: 32px;
+    font-size: 3.2rem; }
+  .commentItemText h4 {
+    width: 100%; } }

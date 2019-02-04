@@ -4,10 +4,11 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: column;
+    
 }
 
 h1 {
-    @include ffSize(100); // switch this to 166!
+    @include ffSize(166); // switch this to 166!
     font-family: $ffSecondary;
     font-weight: $fontWeightLight;
     margin: 0;
