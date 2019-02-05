@@ -310,6 +310,7 @@ input {
 
 .loading {
   background: black;
+  text-align: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -318,6 +319,15 @@ input {
   z-index: 100; }
   .loading h1 {
     color: #f0efed; }
+
+.buttonload {
+  position: relative;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 30px 30px;
+  font-size: 60px;
+  margin-top: 10px; }
 
 nav.navMain {
   color: #f0efed;

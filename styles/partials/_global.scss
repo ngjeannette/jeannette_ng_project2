@@ -201,13 +201,25 @@ input {
 
 .loading {
     background: black;
+    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 100;
-    h1{
-        color:$colorPrimary;
+    h1 {
+        color: $colorPrimary;
     }
+}
+
+// source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loading_buttons
+.buttonload {
+    position: relative;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 30px 30px;
+    font-size: 60px;
+    margin-top: 10px;
 }
