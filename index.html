@@ -228,7 +228,10 @@
   crossorigin="anonymous"></script>
     <script>
       $(function() {
-        $('.loading').delay(500).hide(0);
+        $('.loading').delay(700).hide(0);
+        $('.buttonload').animate({opacity:0});
+
+
         $("#hamburger").on("click", function() {
           $(".nav").slideToggle("slow", function () {
           });

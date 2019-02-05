@@ -528,11 +528,7 @@ main {
   -ms-grid-row-align: center;
   align-self: center; }
   .contactInfo .social {
-    padding-bottom: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 80%; }
+    padding-bottom: 20px; }
     .contactInfo .social a {
       padding-right: 20px; }
   .contactInfo h2 {
@@ -572,9 +568,7 @@ footer {
   h1 {
     font-size: 100px; }
   #contactSection .container form {
-    width: 55%;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
+    width: 55%; }
   #contactSection .container .contactInfo {
     width: 40%; } }
 
@@ -584,7 +578,9 @@ footer {
   h1 {
     font-size: 100px; }
   #contactSection .container form {
-    position: static; }
+    position: static;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
   #contactSection .container form {
     width: 100%; }
   .grid1,

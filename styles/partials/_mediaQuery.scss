@@ -11,7 +11,6 @@
     #contactSection .container {
         form {
             width: 55%;
-            box-shadow: none;
         }
         .contactInfo {
             width: 40%;
@@ -28,6 +27,7 @@
     }
     #contactSection .container form {
         position: static;
+        box-shadow:none;
     }
     #contactSection .container form {
         width: 100%;
