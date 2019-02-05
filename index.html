@@ -22,14 +22,15 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+<div class="loading"><h1 id="loading">Planted</h1>
+</div>
     <a href="#maincontent" class="skip-link">Skip to main content.</a>
-
-    <header id="home">
+    <header id="home" >
        <a href="#home" id="logo">Planted</a>
 
       <img src="images/hamburger-menu.svg" alt="" id="hamburger" />
 
-      <div class="nav">
+      <div class="nav" >
 
         <p><i class="fas fa-times" id="cross"></i></p>
         <ul>
@@ -52,7 +53,7 @@
         </div>
       </nav>
 
-      <div class="container header id= "indexHeader">
+      <div class="container header id = "indexHeader">
         <div class="headerText ">
           <h1>Planted</h1>
           <h1>invitation</h1>
@@ -219,25 +220,24 @@
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"
     ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js" integrity="sha256-erF9fIMASEVmAWGdOmQi615Bmx0L/vWNixxTNDXS4FQ="
+  crossorigin="anonymous"></script>
     <script>
       $(function() {
+        $('.loading').delay(500).hide(0);
         $("#hamburger").on("click", function() {
-          console.log("hi");
-
           $(".nav").slideToggle("slow", function () {
-
           });
-          $(".nav").addClass('active');
+          $(".nav").addClass('active')
 
             })
-        });
         $(`#cross`).on("click", function() {
            $(".nav").slideToggle("slow", function () {
+        })
+      })
+    })
 
-
-        });
-        
-      });
     </script>
   </body>
 </html>

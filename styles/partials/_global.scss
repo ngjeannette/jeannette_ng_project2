@@ -11,8 +11,6 @@ $colorAccentLight: rgb(14, 144, 45);
 // Green #0e902d
 $colorAccentDark: rgb(7, 65, 21);
 // Forest green #074115 
-
-
 // fonts
 $ffPrimary: "Roboto",
 sans-serif;
@@ -187,4 +185,29 @@ input {
     left: 0;
     background: white;
     z-index: 999;
+}
+
+.hidden {
+    opacity: 1;
+}
+
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.loading {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    h1{
+        color:$colorPrimary;
+    }
 }

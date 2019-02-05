@@ -87,9 +87,6 @@
     #contactSection .container .contactInfo {
         width: 60%;
     }
-    .feature .featureRight .upcomingWorkshopsText {
-        padding-top: 0%;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -117,6 +114,9 @@
                 margin: 0 6.25%;
                 height: auto;
                 padding-top: 0;
+            }
+            .discoverText{
+                padding-bottom:20px;
             }
         }
     }

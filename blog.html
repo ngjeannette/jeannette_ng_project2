@@ -19,22 +19,21 @@
     <link rel="stylesheet" type="text/css" href="styles/styleBlog.css" />
   </head>
   <body>
+
     <a href="#blog" class="skip-link">Skip to main content.</a>
 
     <header class="blog">
-              <a href="index.html" id="logo">Planted</a>
-
+      <a href="index.html" id="logo">Planted</a>
       <img src="images/hamburger-menu.svg" alt="" id="hamburger" />
-<div class="nav">
-
-  <p><i class="fas fa-times" id="cross"></i></p>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index.html#mainContent">About</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</div>
+      <div class="nav">
+        <p><i class="fas fa-times" id="cross"></i></p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#mainContent">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
 
       <nav class="navMain">
         <div class="container">
@@ -197,26 +196,23 @@
     <footer>
       <p>Copyright &copy; 2018 HackerYou</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js" integrity="sha256-erF9fIMASEVmAWGdOmQi615Bmx0L/vWNixxTNDXS4FQ="
+    crossorigin="anonymous"></script>
     <script>
-      $(function () {
-        $("#hamburger").on("click", function () {
+      $(function() {
+
+        $("#hamburger").on("click", function() {
           console.log("hi");
 
-          $(".nav").slideToggle("slow", function () {
-
-          });
-          $(".nav").addClass('active');
-
-        })
-      });
-      $(`#cross`).on("click", function () {
-        $(".nav").slideToggle("slow", function () {
-
-
+          $(".nav").slideToggle("slow", function() {});
+          $(".nav").addClass("active");
         });
-
+      });
+      $(`#cross`).on("click", function() {
+        $(".nav").slideToggle("slow", function() {});
       });
     </script>
   </body>

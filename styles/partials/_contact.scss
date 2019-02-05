@@ -33,7 +33,7 @@ main {
   @include ffSize(20);
   color: $colorAccentLight;
   &:hover {
-    color: $colorAccent;
+    color: $colorDark;
   }
 }
 
