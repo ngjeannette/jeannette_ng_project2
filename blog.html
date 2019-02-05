@@ -13,25 +13,40 @@
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png" />
+
+    <link type="image/png" href="images/favicon.ico" rel="icon" />
     <link rel="stylesheet" type="text/css" href="styles/styleBlog.css" />
   </head>
   <body>
-          <a href="#blog" class="skip-link">Skip to main content.</a>
+    <a href="#blog" class="skip-link">Skip to main content.</a>
 
     <header class="blog">
-            <img src="images/hamburger-menu.svg" alt="" id="hamburger">
+              <a href="index.html" id="logo">Planted</a>
 
-          <nav class="navMain">
-            <div class="container">
-              <ul>
-                <li>Planted</li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#maincontent">About</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
+      <img src="images/hamburger-menu.svg" alt="" id="hamburger" />
+<div class="nav">
+
+  <p><i class="fas fa-times" id="cross"></i></p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#mainContent">About</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+      <nav class="navMain">
+        <div class="container">
+          <ul>
+            <li><a href="index.html">Planted</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#mainContent">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
       <div class="container ">
         <div class="headerText">
           <h1>Blog</h1>
@@ -158,7 +173,7 @@
 
             <div class="griditem grid2">
               <label for="email" class="visuallyhidden">Email Address</label>
-              <input type="email" id="email" placeholder="email address" />
+              <input type="email" id="email" placeholder="Email address" />
             </div>
 
             <div class="griditem grid3">
@@ -182,5 +197,27 @@
     <footer>
       <p>Copyright &copy; 2018 HackerYou</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $("#hamburger").on("click", function () {
+          console.log("hi");
+
+          $(".nav").slideToggle("slow", function () {
+
+          });
+          $(".nav").addClass('active');
+
+        })
+      });
+      $(`#cross`).on("click", function () {
+        $(".nav").slideToggle("slow", function () {
+
+
+        });
+
+      });
+    </script>
   </body>
 </html>

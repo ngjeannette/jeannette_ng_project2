@@ -1,17 +1,25 @@
 // colors
 $colorPrimary: rgb(240, 239, 237);
-$colorSecondary:rgb(44, 44, 44);
+// Off white, #f0efed
+$colorSecondary: rgb(44, 44, 44);
+// Black, #2c2c2c
 $colorDark: rgb(4, 10, 12);
+// Black, #040a0c
 $colorAccent: rgb(248, 231, 28);
-$colorAccentLight:rgb(14, 144, 45);
-$colorAccentDark:rgb(7, 65, 21);
+// Sunny yellow #f8e71c
+$colorAccentLight: rgb(14, 144, 45);
+// Green #0e902d
+$colorAccentDark: rgb(7, 65, 21);
+// Forest green #074115 
+
+
 // fonts
-$ffPrimary: 'Roboto',
+$ffPrimary: "Roboto",
 sans-serif;
-$ffSecondary: 'Josefin Sans',
+$ffSecondary: "Josefin Sans",
 sans-serif;
 $fontWeightBold: 700;
-$fontWeightLight:400;
+$fontWeightLight: 400;
 // mixin
 // mixins
 @mixin header($url) {
@@ -22,12 +30,10 @@ $fontWeightLight:400;
 
 @mixin ffSize($fontSize) {
     font-size: $fontSize * 1px;
-    font-size: ($fontSize/10) *1rem;
 }
 
 @mixin ls($letterSpacingSize) {
     letter-spacing: $letterSpacingSize * 1px;
-    letter-spacing: ($letterSpacingSize/10) *1rem;
 }
 
 @mixin lh($lineHeightSize) {
@@ -113,12 +119,10 @@ body {
 }
 
 .paddingLarge {
-    padding: 15rem 0;
     padding: 150px 0;
 }
 
 .paddingSmall {
-    padding: 3rem 0;
     padding: 30px 0;
 }
 
@@ -135,7 +139,7 @@ body {
     text-decoration: none;
     color: white;
     background: $colorAccentLight;
-    padding: 2rem 4rem;
+    padding: 20px 40px;
     display: inline-block;
     @include ffSize(20);
     font-family: $ffSecondary;
@@ -143,29 +147,22 @@ body {
     @include ls(1);
     text-align: center;
     &:hover {
-        background: $colorAccent;
+        background: $colorDark;
         color: $colorPrimary;
     }
 }
 
 .buttonPost {
     @extend .button;
-    padding: 1rem 0; // width: 100%;
 }
 
 // image
 .boxShadowRight {
     box-shadow: 20px 20px $colorAccent;
-    &:hover {
-        box-shadow: 20px 20px $colorAccentLight;
-    }
 }
 
 .boxShadowLeft {
     box-shadow: -20px 20px $colorAccent;
-    &:hover {
-        box-shadow: -20px 20px $colorAccentLight;
-    }
 }
 
 #name:focus,

@@ -1,6 +1,7 @@
 .feature {
     display: flex;
     flex-wrap: wrap;
+    background: white;
     justify-content: space-between;
     .featureLeft {
         width: 40%;
@@ -11,19 +12,18 @@
     .featureLeft,
     .featureRight {
         img {
+            height: 400px;
             width: 100%;
             position: relative;
-        }
-        .discoverText,
-        .upcomingWorkshopsText {
-            padding-top: 3rem;
-            padding-bottom: 3rem;
+            object-fit: cover;
         }
         .discoverText {
-            padding-left: 20%;
+            margin: 0 0 0 15.25%;
+            padding-top: 20px;
         }
-        .upcomingWorkshopsText{
-            padding-right: 20%;
+        .upcomingWorkshopsText {
+            margin: 0 15.25% 0 0;
+            padding-top: 94px;
         }
     }
 }
@@ -40,6 +40,7 @@ img.left {
 
 .discoverText,
 .upcomingWorkshopsText {
+    height: 400px;
     h3 {
         @extend .heading6;
     }

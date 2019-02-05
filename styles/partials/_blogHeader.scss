@@ -4,6 +4,7 @@ header.blog {
     justify-content: space-between;
     flex-direction: column;
     z-index: 5;
+    height: 730px;
     position: relative;
     .container {
         display: flex;
@@ -13,7 +14,7 @@ header.blog {
             padding-bottom: 5rem;
             padding-bottom: 50px;
             h1 {
-                margin-bottom: 40px;
+                margin-bottom: 55px;
             }
         }
     }

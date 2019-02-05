@@ -1,17 +1,18 @@
 header {
     @include header('../images/home-image-1.jpg');
+    height: 730px;
     .header {
         display: flex;
-        flex-direction: column;
-        height: calc(100vh - 100px);
+        flex-direction: column; // height: calc(100vh - 100px);
         justify-content: center;
+        height: 100%;
         .headerText {
             align-self: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             position: relative;
-            ;
+            z-index: 10;
         }
     }
 }
@@ -19,7 +20,7 @@ header {
 .headerimage {
     position: absolute;
     right: 0;
-    top: 127px;
+    top: 200px;
 }
 
 h1 {
@@ -32,11 +33,12 @@ h1 {
 
 h1+h1 {
     color: $colorAccent;
+    position: relative;
+    top: -22px;
+    left: -2px;
 }
 
 h1:first-child {
     position: relative;
     left: -5px;
 }
-
-
