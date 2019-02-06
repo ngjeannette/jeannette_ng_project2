@@ -103,3 +103,7 @@ nav.navMain ul li:first-child a,
     padding-bottom: 0;
     color: $colorPrimary;
 }
+
+.blog nav.navMain, #contactHeader nav.navMain{
+    background: black;
+}

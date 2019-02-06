@@ -437,6 +437,9 @@ nav.navMain ul li:first-child a,
   padding-bottom: 0;
   color: #f0efed; }
 
+.blog nav.navMain, #contactHeader nav.navMain {
+  background: black; }
+
 header {
   height: 100vh;
   background: url("../images/home-image-1.jpg") fixed;

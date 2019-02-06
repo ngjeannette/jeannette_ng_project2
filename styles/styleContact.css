@@ -356,7 +356,6 @@ h1:last-child {
 
 nav.navMain {
   color: #f0efed;
-  background-color: #040a0c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -379,14 +378,16 @@ nav.navMain {
       display: flex;
       padding-right: 10px; }
 
-nav a {
+nav.navMain a,
+.nav a {
   text-decoration: none;
   color: #f0efed;
   text-transform: uppercase;
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 6px; }
-  nav a:hover {
+  nav.navMain a:hover,
+  .nav a:hover {
     color: #f8e71c; }
 
 nav.navMain ul li:first-child a,
@@ -461,11 +462,11 @@ nav.navMain ul li:first-child a,
 .nav a {
   width: 100%;
   text-align: center;
-  text-decoration: none;
   padding-bottom: 0;
   color: #f0efed; }
-  .nav a:hover {
-    color: #f8e71c; }
+
+.blog nav.navMain, #contactHeader nav.navMain {
+  background: black; }
 
 form {
   background: #f0efed;
