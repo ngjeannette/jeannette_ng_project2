@@ -712,7 +712,11 @@ footer {
       -webkit-box-shadow: none;
       box-shadow: none; }
   .blogRight .blogInfoText {
-    border: none; }
+    border: none;
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 4.16% 0 4.16%; }
   .blogComment,
   .blogform {
     margin: 0 4.16% 0 4.16%; }
@@ -774,9 +778,6 @@ footer {
     margin-bottom: 30px; }
   .gallery .container img:last-child {
     margin-bottom: 0; }
-  .blogRight .blogInfoText {
-    left: 0;
-    margin: 0; }
   .blogComment .commentItem .commentImage {
     width: 25%; }
   .commentItemText {

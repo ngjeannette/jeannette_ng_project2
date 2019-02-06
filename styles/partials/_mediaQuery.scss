@@ -75,6 +75,11 @@
     }
     .blogRight .blogInfoText {
         border: none;
+        position:static;
+        padding-left:0;
+        padding-right:0;
+        margin: 0 4.16% 0 4.16%;
+
     }
     .blogComment,
     .blogform {
@@ -167,10 +172,7 @@
             }
         }
     }
-    .blogRight .blogInfoText {
-        left: 0;
-        margin: 0;
-    }
+
     .blogComment .commentItem .commentImage {
         width: 25%;
     }
