@@ -11,6 +11,7 @@ $colorAccentLight: rgb(14, 144, 45);
 // Green #0e902d
 $colorAccentDark: rgb(7, 65, 21);
 // Forest green #074115 
+
 // fonts
 $ffPrimary: "Roboto",
 sans-serif;
@@ -18,7 +19,7 @@ $ffSecondary: "Josefin Sans",
 sans-serif;
 $fontWeightBold: 700;
 $fontWeightLight: 400;
-// mixin
+
 // mixins
 @mixin header($url) {
     height: 100vh;
@@ -154,7 +155,7 @@ body {
     @extend .button;
 }
 
-// image
+// images box shadows
 .boxShadowRight {
     box-shadow: 20px 20px $colorAccent;
 }
@@ -174,6 +175,7 @@ input {
     font-size: 20px;
 }
 
+// Skip link
 .skip-link {
     position: absolute;
     left: -1000px;
@@ -187,9 +189,7 @@ input {
     z-index: 999;
 }
 
-.hidden {
-    opacity: 1;
-}
+
 
 #loading {
     position: absolute;

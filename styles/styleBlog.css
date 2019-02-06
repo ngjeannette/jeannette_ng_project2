@@ -295,9 +295,6 @@ input {
   background: white;
   z-index: 999; }
 
-.hidden {
-  opacity: 1; }
-
 #loading {
   position: absolute;
   top: 50%;
