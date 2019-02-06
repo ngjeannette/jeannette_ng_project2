@@ -56,7 +56,6 @@ nav.navMain ul li:first-child a,
     right: 3.5%;
     top: 61px;
     display: none;
-    cursor: pointer;
 }
 
 #cross {
@@ -67,8 +66,10 @@ nav.navMain ul li:first-child a,
     font-size: 30px;
 }
 
-.active {
-    display: block;
+#logo,
+#hamburger,
+#cross {
+    cursor: pointer;
 }
 
 .nav {

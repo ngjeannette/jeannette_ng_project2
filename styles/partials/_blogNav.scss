@@ -37,6 +37,19 @@ nav.navMain ul li:first-child a,
     text-decoration: none;
 }
 
+#logo {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    text-transform: uppercase;
+    color: $colorPrimary;
+    display: none;
+    width: 60%;
+    &:hover {
+        color: $colorAccent;
+    }
+}
+
 #hamburger {
     color: white;
     position: absolute;
@@ -53,8 +66,10 @@ nav.navMain ul li:first-child a,
     font-size: 30px;
 }
 
-.active {
-    display: block;
+#logo,
+#hamburger,
+#cross {
+    cursor: pointer;
 }
 
 .nav {
@@ -88,20 +103,6 @@ nav.navMain ul li:first-child a,
     text-decoration: none;
     padding-bottom: 0;
     color: $colorPrimary;
-    &:hover {
-        color: $colorAccent;
-    }
-}
-
-#logo {
-    position: absolute;
-    top: 50px;
-    left: 25px;
-    text-transform: uppercase;
-    color: $colorPrimary;
-    display: none;
-    width: 60%;
-    cursor: pointer;
     &:hover {
         color: $colorAccent;
     }

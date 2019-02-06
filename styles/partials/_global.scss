@@ -134,7 +134,7 @@ body {
 }
 
 // Button
-.button {
+.cta {
     text-decoration: none;
     color: white;
     background: $colorAccentLight;
@@ -151,9 +151,6 @@ body {
     }
 }
 
-.buttonPost {
-    @extend .button;
-}
 
 // images box shadows
 .boxShadowRight {

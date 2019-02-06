@@ -252,7 +252,7 @@ body {
   width: 90%;
   margin: 0 auto; }
 
-.button, .buttonPost {
+.cta {
   text-decoration: none;
   color: white;
   background: #0e902d;
@@ -263,7 +263,7 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   text-align: center; }
-  .button:hover, .buttonPost:hover {
+  .cta:hover {
     background: #040a0c;
     color: #f0efed; }
 
@@ -407,6 +407,18 @@ nav.navMain ul li:first-child a,
   padding-bottom: 0;
   text-decoration: none; }
 
+#logo {
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  text-transform: uppercase;
+  color: #f0efed;
+  display: none;
+  width: 60%;
+  cursor: pointer; }
+  #logo:hover {
+    color: #f8e71c; }
+
 #hamburger {
   color: white;
   position: absolute;
@@ -420,9 +432,6 @@ nav.navMain ul li:first-child a,
   right: 40px;
   color: #f0efed;
   font-size: 30px; }
-
-.active {
-  display: block; }
 
 .nav {
   display: none;
@@ -462,18 +471,6 @@ nav.navMain ul li:first-child a,
   padding-bottom: 0;
   color: #f0efed; }
   .nav a:hover {
-    color: #f8e71c; }
-
-#logo {
-  position: absolute;
-  top: 50px;
-  left: 25px;
-  text-transform: uppercase;
-  color: #f0efed;
-  display: none;
-  width: 60%;
-  cursor: pointer; }
-  #logo:hover {
     color: #f8e71c; }
 
 main {

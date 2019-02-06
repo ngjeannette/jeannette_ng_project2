@@ -253,7 +253,7 @@ body {
   width: 90%;
   margin: 0 auto; }
 
-.button, .buttonPost {
+.cta {
   text-decoration: none;
   color: white;
   background: #0e902d;
@@ -264,7 +264,7 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
   text-align: center; }
-  .button:hover, .buttonPost:hover {
+  .cta:hover {
     background: #040a0c;
     color: #f0efed; }
 
@@ -386,8 +386,7 @@ nav.navMain ul li:first-child a,
   position: absolute;
   right: 3.5%;
   top: 61px;
-  display: none;
-  cursor: pointer; }
+  display: none; }
 
 #cross {
   position: absolute;
@@ -396,8 +395,10 @@ nav.navMain ul li:first-child a,
   color: #f0efed;
   font-size: 30px; }
 
-.active {
-  display: block; }
+#logo,
+#hamburger,
+#cross {
+  cursor: pointer; }
 
 .nav {
   display: none;
@@ -555,9 +556,8 @@ img.left {
   .discoverText h3,
   .upcomingWorkshopsText h3 {
     margin: 0; }
-  .discoverText .button, .discoverText .buttonPost,
-  .upcomingWorkshopsText .button,
-  .upcomingWorkshopsText .buttonPost {
+  .discoverText .cta,
+  .upcomingWorkshopsText .cta {
     width: 200px; }
 
 .info {
