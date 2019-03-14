@@ -448,8 +448,9 @@ nav.navMain ul li:first-child a,
   position: fixed;
   z-index: 20; }
   .nav ul {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     -ms-flex-line-pack: center;
     align-content: center;
     -webkit-box-orient: vertical;
@@ -475,7 +476,8 @@ nav.navMain ul li:first-child a,
   padding-bottom: 0;
   color: #f0efed; }
 
-.blog nav.navMain, #contactHeader nav.navMain {
+.blog nav.navMain,
+#contactHeader nav.navMain {
   background: black; }
 
 main {
@@ -630,7 +632,7 @@ a {
   grid-column: span 2; }
 
 footer {
-  background: #2c2c2c; }
+  background: #040a0c; }
   footer p {
     margin: 0;
     text-align: center;
@@ -664,15 +666,16 @@ footer {
     -ms-grid-column-span: 2;
     grid-column: span 2; }
   .contactInfo {
-    padding-bottom: 5rem;
-    padding-bottom: 50px; }
+    padding-bottom: 10rem;
+    padding-bottom: 100px; }
   #contactSection {
-    padding: 15rem 0;
-    padding: 150px 0; }
+    padding: 10rem 0;
+    padding: 100px 0; }
   #blog {
-    top: 0; }
+    top: 0;
+    margin: 0 4.16% 0 4.16%; }
     #blog aside {
-      padding-top: 0;
+      padding-top: 100px;
       width: 100%; }
       #blog aside .asideImage {
         width: 100%; }
@@ -682,7 +685,7 @@ footer {
         margin: 0; }
     #blog .blogRight {
       width: 100%;
-      padding-bottom: 100px; }
+      padding: 100px 0; }
   .asideImage img {
     display: block; }
   .blogInfoImage img {
@@ -779,6 +782,8 @@ footer {
     display: block; }
   nav.navMain {
     display: none; }
+  .blogInfoImage img {
+    z-index: 4; }
   #hamburger {
     display: block; }
   #contactHeader .container {
