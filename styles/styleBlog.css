@@ -370,6 +370,7 @@ nav.navMain {
   display: -ms-flexbox;
   display: flex; }
   nav.navMain ul {
+    height: 70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -410,7 +411,7 @@ nav.navMain ul li:first-child a,
 
 #logo {
   position: absolute;
-  top: 50px;
+  top: 19px;
   left: 25px;
   text-transform: uppercase;
   color: #f0efed;
@@ -422,8 +423,8 @@ nav.navMain ul li:first-child a,
 #hamburger {
   color: white;
   position: absolute;
-  right: 3.5%;
-  top: 61px;
+  right: 6.5%;
+  top: 31px;
   display: none; }
 
 #cross {
