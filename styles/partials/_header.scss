@@ -3,7 +3,7 @@ header {
   height: 730px;
   .header {
     display: flex;
-    flex-direction: column; // height: calc(100vh - 100px);
+    flex-direction: column; 
     justify-content: center;
     height: 100%;
     .headerText {

@@ -327,7 +327,7 @@ input {
 
 header {
   height: 100vh;
-  background: url("../images/contact-header-1.jpg") fixed;
+  background: url("../images/contact-header-1.jpg");
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -640,6 +640,14 @@ footer {
   .introText h2 {
     font-size: 50px;
     margin: 0; }
+  .feature .featureRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
   .feature .featureLeft,
   .feature .featureRight {
     width: 100%; }
@@ -649,13 +657,16 @@ footer {
     .feature .featureRight img.left {
       -webkit-box-shadow: none;
       box-shadow: none; }
+    .feature .featureLeft img.right,
+    .feature .featureRight img.right {
+      position: static; }
     .feature .featureLeft .discoverText,
     .feature .featureLeft .upcomingWorkshopsText,
     .feature .featureRight .discoverText,
     .feature .featureRight .upcomingWorkshopsText {
       padding-right: 0;
       padding-left: 0;
-      margin: 0 6.25%;
+      margin: 20px 6.25%;
       height: auto;
       padding-top: 0; }
     .feature .featureLeft .discoverText,

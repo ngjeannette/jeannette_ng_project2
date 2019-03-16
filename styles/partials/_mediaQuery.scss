@@ -105,6 +105,10 @@
     }
   } // FEATURE
   .feature {
+    .featureRight {
+      display: flex;
+      flex-direction: column-reverse;
+    }
     .featureLeft,
     .featureRight {
       width: 100%;
@@ -112,11 +116,14 @@
       img.left {
         box-shadow: none;
       }
+      img.right {
+        position: static;
+      }
       .discoverText,
       .upcomingWorkshopsText {
         padding-right: 0;
         padding-left: 0;
-        margin: 0 6.25%;
+        margin: 20px 6.25%;
         height: auto;
         padding-top: 0;
       }
@@ -184,7 +191,7 @@
 }
 
 @media (max-width: 650px) {
-  #indexHeader h1+h1 {
+  #indexHeader h1 + h1 {
     color: $colorAccent;
     position: relative;
     top: -15px;
